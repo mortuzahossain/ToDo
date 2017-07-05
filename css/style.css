@@ -67,7 +67,7 @@ input:-webkit-autofill:focus {
     font-size: 50px;
     text-shadow: 3px 5px 3px #66B;
     border-bottom: 9px red solid;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
     margin-bottom: -40px;
     border-radius: 10px;
 }
