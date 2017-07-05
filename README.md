@@ -2,7 +2,7 @@
 
 
 ****************************************************************************************
-                                Project Installing Process
+                                            Project Installing Process
 ****************************************************************************************
 
 * Copy all the file into your server root directory
