@@ -73,7 +73,7 @@ input:-webkit-autofill:focus {
 }
 
 .input_data {
-    padding: 30px;
+    padding: 26px 30px 27px 30px;
     margin-bottom: -15px;
 }
 
