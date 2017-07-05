@@ -38,14 +38,17 @@
 // Inserting Data
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         // Taking Form input
-        $todo = $_POST['todo'];
-        // Inserting Query
-        $insert_query = "INSERT INTO todo_list (todo_text) VALUES ('$todo')";
-        if (mysqli_query($conn,$insert_query)) {
-            echo "<p class='text-center bg-primary'>Successfully Added<p>";
-        } else {
-            echo "<p class='text-center bg-danger'>Something Wrong. Please try again<p>";
-        }
+	        $todo = $_POST['todo'];
+	        // Inserting Query
+	        if (!empty($todo)) {
+	                $insert_query = "INSERT INTO todo_list (todo_text) VALUES ('$todo')";
+	        if (mysqli_query($conn,$insert_query)) {
+	            echo "<p class='text-center bg-primary'>Successfully Added<p>";
+	        } else {
+	            echo "<p class='text-center bg-danger'>Something Wrong. Please try again<p>";
+	        }
+    	}
+
     }
 // Sowing Data
     $showing_query = "SELECT * FROM todo_list ORDER BY id DESC";
