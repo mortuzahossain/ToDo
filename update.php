@@ -50,6 +50,7 @@
             $update_query = "UPDATE todo_list SET todo_text = '$update_todo' WHERE id= $id";
             if (mysqli_query($conn,$update_query)) {
                 echo "<p class='text-center bg-primary'>Successfully Updated<p>";
+                header('Location: index.php');
             } else {
                 echo "<p class='text-center bg-danger'>Something Wrong. Please try again<p>";
             }
